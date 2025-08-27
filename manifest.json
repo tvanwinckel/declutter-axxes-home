@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Element Hider",
+  "description": "Hide or remove elements on Axxes Home.",
+  "version": "1.0",
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://home.axxes.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
